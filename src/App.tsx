@@ -1,5 +1,21 @@
+import Logo from './assets/images/logo.svg';
+import IconHamburger from './assets/images/icon-hamburger.svg';
+import IconClose from './assets/images/icon-close.svg';
+
 function App() {
-  return <h1 className="text-black font-bold text-2xl">Hello world!</h1>;
+  return (
+    <div>
+      <header>
+        <nav className="flex justify-between items-center px-6 py-12">
+          <img src={Logo} alt="manage logo" />
+          <button>
+            <img src={IconHamburger} alt="hamburger icon" />
+            <img className="hidden" src={IconClose} alt="close icon" />
+          </button>
+        </nav>
+      </header>
+    </div>
+  );
 }
 
 export default App;
