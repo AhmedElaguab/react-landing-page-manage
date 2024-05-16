@@ -7,7 +7,7 @@ function App() {
     <div>
       <header>
         <nav className="flex justify-between items-center px-6 py-12">
-          <img src={Logo} alt="manage logo" />
+          <img className="h-5" src={Logo} alt="manage logo" />
           <button>
             <img src={IconHamburger} alt="hamburger icon" />
             <img className="hidden" src={IconClose} alt="close icon" />
