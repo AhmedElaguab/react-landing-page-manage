@@ -1,7 +1,13 @@
 import Logo from './assets/images/logo.svg';
+import LogoLight from './assets/images/logo-light.svg';
 import IconHamburger from './assets/images/icon-hamburger.svg';
 import IconClose from './assets/images/icon-close.svg';
 import IntroIllustration from './assets/images/illustration-intro.svg';
+import IconFacebook from './assets/images/icon-facebook.svg';
+import IconYoutube from './assets/images/icon-youtube.svg';
+import IconTwitter from './assets/images/icon-twitter.svg';
+import IconPintrest from './assets/images/icon-pinterest.svg';
+import IconInsta from './assets/images/icon-instagram.svg';
 
 function App() {
   return (
@@ -114,6 +120,105 @@ function App() {
             Get Started
           </a>
         </section>
+        <footer className="bg-blue-dark -mx-4 py-10 px-4">
+          <div className="flex">
+            <input
+              className="grow  inline-flex bg-red-white py-3 px-8 rounded-full hover:opacity-90 mr-2"
+              type="text"
+              placeholder="Updated on you inbox.."
+            />
+            <a
+              className="inline-flex bg-red-primary text-white py-3 px-8 rounded-full hover:opacity-90"
+              href="/"
+            >
+              Go
+            </a>
+          </div>
+          <div className="px-4 mt-8 flex justify-evenly  mx-auto  text-gray-300">
+            <ul className="">
+              <li>
+                <a className="flex p-2 hover:text-white" href="#">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a className="flex p-2 hover:text-white" href="#">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a className="flex p-2 hover:text-white" href="#">
+                  Products
+                </a>
+              </li>
+              <li>
+                <a className="flex p-2 hover:text-white" href="#">
+                  About Us
+                </a>
+              </li>
+            </ul>
+            <ul className="">
+              <li>
+                <a className="flex p-2 hover:text-white" href="#">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a className="flex p-2 hover:text-white" href="#">
+                  Community
+                </a>
+              </li>
+              <li>
+                <a className="flex p-2 hover:text-white" href="#">
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul className="mt-10 flex justify-between px-10">
+            <li>
+              <a className="flex w-9 hover:opacity-90" href="#">
+                <img
+                  className="w-full"
+                  src={IconFacebook}
+                  alt="Facebook Icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a className="flex w-9 hover:opacity-90" href="#">
+                <img className="w-full" src={IconYoutube} alt="Youtube Icon" />
+              </a>
+            </li>
+            <li>
+              <a className="flex w-9 hover:opacity-90" href="#">
+                <img className="w-full" src={IconTwitter} alt="Twitter Icon" />
+              </a>
+            </li>
+            <li>
+              <a className="flex w-9 hover:opacity-90" href="#">
+                <img
+                  className="w-full"
+                  src={IconPintrest}
+                  alt="Pintrest Icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a className="flex w-9 hover:opacity-90" href="#">
+                <img className="w-full" src={IconInsta} alt="Insta Icon" />
+              </a>
+            </li>
+          </ul>
+          <div className="mt-20">
+            <a href="#" className="flex w-[50%] mx-auto">
+              <img className="w-full" src={LogoLight} alt="manager logo" />
+            </a>
+          </div>
+          <p className="mt-20 text-gray-light text-center">
+            Copyright {new Date().getFullYear()}, All rights reserved!
+          </p>
+        </footer>
       </main>
     </div>
   );

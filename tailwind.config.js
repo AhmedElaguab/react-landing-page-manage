@@ -8,6 +8,7 @@ export default {
       },
       colors: {
         'blue-primary': 'hsl(228, 39%, 23%)',
+        'blue-dark': 'hsl(233, 12%, 13%)',
         'red-primary': 'hsl(12, 88%, 59%)',
         'red-light': 'hsl(13, 100%, 96%)',
         'gray-light': 'hsl(227, 12%, 61%)',
