@@ -91,6 +91,18 @@ function App() {
             </li>
           </ul>
         </section>
+        <section className="mt-24 leading-relaxed text-center">
+          <h2 className="text-blue-primary text-4xl leading-normal font-bold">
+            What they've said
+          </h2>
+          {/* TODO: ADD TESTIMONIALS */}
+          <a
+            className="inline-flex bg-red-primary text-white py-3 px-8 mt-8 rounded-full shadow-md shadow-red-primary hover:opacity-90"
+            href="/"
+          >
+            Get Started
+          </a>
+        </section>
       </main>
     </div>
   );
