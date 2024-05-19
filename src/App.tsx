@@ -103,6 +103,17 @@ function App() {
             Get Started
           </a>
         </section>
+        <section className="mt-24 -mx-4 bg-red-primary text-center text-white py-20">
+          <h2 className="text-4xl font-medium leading-normal w-[70%] mx-auto">
+            Simplify how your team works today.
+          </h2>
+          <a
+            className="inline-flex bg-white text-red-primary py-3 px-8 mt-8 rounded-full shadow-md hover:opacity-90"
+            href="/"
+          >
+            Get Started
+          </a>
+        </section>
       </main>
     </div>
   );
