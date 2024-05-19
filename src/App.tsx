@@ -7,10 +7,14 @@ function App() {
   return (
     <div>
       <header>
-        <nav className="flex justify-between items-center px-6 py-12">
-          <img className="h-5" src={Logo} alt="manage logo" />
+        <nav className="flex justify-between items-center px-7 py-12">
+          <img className="h-[22px]" src={Logo} alt="manage logo" />
           <button>
-            <img src={IconHamburger} alt="hamburger icon" />
+            <img
+              className="w-[30px] pb-1"
+              src={IconHamburger}
+              alt="hamburger icon"
+            />
             <img className="hidden" src={IconClose} alt="close icon" />
           </button>
         </nav>
