@@ -20,13 +20,21 @@ function App() {
         </nav>
       </header>
       <main className="px-4">
-        <section>
+        <section className="text-center">
           <img src={IntroIllustration} alt="intro illustration" />
-          <h1>Bring everyone together to build better products.</h1>
-          <p>
+          <h1 className="text-blue-primary text-5xl leading-tight font-bold mt-4">
+            Bring everyone together to build better products.
+          </h1>
+          <p className="text-gray-light text-xl mt-4">
             Manage makes it simple for software teams to plan day-to-day tasks
             while keeping the larger team goals in view!
           </p>
+          <a
+            className="inline-flex bg-red-primary text-white py-3 px-8 mt-8 rounded-full shadow-md shadow-red-primary hover:opacity-90"
+            href="/"
+          >
+            Get Started
+          </a>
         </section>
       </main>
     </div>
