@@ -36,6 +36,61 @@ function App() {
             Get Started
           </a>
         </section>
+        <section className="mt-24 leading-relaxed">
+          <h2 className="text-center text-blue-primary text-4xl leading-normal font-bold">
+            What's different
+            <br />
+            about Manage?
+          </h2>
+          <p className="text-gray-light text-center mt-4">
+            Manage provides all the functionality your <br /> team needs,
+            without the complexity. Our <br /> software is tailor-made for
+            modern digital <br /> product teams.
+          </p>
+          <ul className="mt-10">
+            <li>
+              <h3 className="bg-red-light p-2 pl-0 rounded-full text-blue-primary font-bold text-lg">
+                <span className="p-2 px-6 bg-red-primary text-white rounded-full mr-2">
+                  01
+                </span>{' '}
+                Track company-wide progress
+              </h3>
+              <p className="mt-3 text-gray-light">
+                See how your day-to-day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way done to the
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </p>
+            </li>
+            <li className="mt-8">
+              <h3 className="bg-red-light p-2 pl-0 rounded-full text-blue-primary font-bold text-lg">
+                <span className="p-2 px-6 bg-red-primary text-white rounded-full mr-2">
+                  02
+                </span>{' '}
+                Advanced built-in reports
+              </h3>
+              <p className="mt-3 text-gray-light">
+                Set internal delivery estimates and track progress toward
+                company goals. Our customisable dashboard helps you build out
+                the reports you need to keep key stakeholders informed.
+              </p>
+            </li>
+
+            <li className="mt-8">
+              <h3 className="bg-red-light p-2 pl-0 rounded-full text-blue-primary font-bold text-lg">
+                <span className="p-2 px-6 bg-red-primary text-white rounded-full mr-2">
+                  03
+                </span>{' '}
+                Everything you need in one place
+              </h3>
+              <p className="mt-3 text-gray-light">
+                Stop jumping from one service to another to communicate, store
+                files, track tasks and share documents. Manage offers an
+                all-in-one team productivity solution.
+              </p>
+            </li>
+          </ul>
+        </section>
       </main>
     </div>
   );
