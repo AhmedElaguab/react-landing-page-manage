@@ -27,7 +27,11 @@ function App() {
       </header>
       <main className="px-4">
         <section className="text-center">
-          <img src={IntroIllustration} alt="intro illustration" />
+          <img
+            className="mx-auto"
+            src={IntroIllustration}
+            alt="intro illustration"
+          />
           <h1 className="text-blue-primary text-5xl leading-tight font-bold mt-4">
             Bring everyone together to build better products.
           </h1>
