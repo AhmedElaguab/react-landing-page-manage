@@ -18,13 +18,16 @@ function App() {
       onKeyUp={e => {
         if (e.code === 'Escape') closeNavbar();
       }}
+      className="max-w-[1264px] mx-auto"
     >
       <header>
         <nav className="flex justify-between items-center px-7 py-12">
-          <img className="h-[22px]" src={Logo} alt="manage logo" />
+          <img className="h-[22px] lg:h-[27px]" src={Logo} alt="manage logo" />
           <button
-            className="w-[30px] h-[30px] pb-1 flex justify-end items-center"
-            onClick={() => setShowNavbar(!showNavbar)}
+            className="w-[30px] h-[30px] pb-1 flex justify-end items-center z-50 lg:hidden"
+            onClick={() => {
+              setShowNavbar(!showNavbar);
+            }}
           >
             {!showNavbar ? (
               <img src={IconHamburger} alt="hamburger icon" />
@@ -32,59 +35,64 @@ function App() {
               <img src={IconClose} alt="close icon" />
             )}
           </button>
-          {showNavbar && (
-            <>
-              <span
-                onClick={closeNavbar}
-                className="fixed top-0 bottom-0 right-0 left-0 bg-black opacity-20"
-              ></span>
-              <ul
-                onClick={closeNavbar}
-                className="fixed bg-white top-24 left-6 right-6 shadow-lg rounded-lg py-8"
+          <span
+            className={`fixed top-0 bottom-0 right-0 left-0 bg-gradient-to-t from-black opacity-30 ${
+              !showNavbar && 'hidden'
+            } lg:hidden`}
+          ></span>
+          <ul
+            onClick={closeNavbar}
+            className={`fixed bg-white top-24 left-6 right-6 shadow-lg rounded-lg py-8 ${
+              !showNavbar && 'hidden'
+            } lg:static lg:bg-transparent lg:shadow-none lg:flex lg:py-0`}
+          >
+            <li>
+              <a
+                className="flex justify-center p-4 text-xl font-medium text-blue-primary hover:text-red-primary lg:text-base"
+                href="#"
               >
-                <li>
-                  <a
-                    className="flex justify-center p-4 text-xl font-medium text-blue-primary hover:text-red-primary "
-                    href="#"
-                  >
-                    Pricing
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="flex justify-center p-4 text-xl font-medium text-blue-primary hover:text-red-primary "
-                    href="#"
-                  >
-                    Product
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="flex justify-center p-4 text-xl font-medium text-blue-primary hover:text-red-primary "
-                    href="#"
-                  >
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="flex justify-center p-4 text-xl font-medium text-blue-primary hover:text-red-primary "
-                    href="#"
-                  >
-                    Careers
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="flex justify-center p-4 text-xl font-medium text-blue-primary hover:text-red-primary "
-                    href="#"
-                  >
-                    Community
-                  </a>
-                </li>
-              </ul>
-            </>
-          )}
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a
+                className="flex justify-center p-4 text-xl font-medium text-blue-primary hover:text-red-primary lg:text-base"
+                href="#"
+              >
+                Product
+              </a>
+            </li>
+            <li>
+              <a
+                className="flex justify-center p-4 text-xl font-medium text-blue-primary hover:text-red-primary lg:text-base"
+                href="#"
+              >
+                About Us
+              </a>
+            </li>
+            <li>
+              <a
+                className="flex justify-center p-4 text-xl font-medium text-blue-primary hover:text-red-primary lg:text-base"
+                href="#"
+              >
+                Careers
+              </a>
+            </li>
+            <li>
+              <a
+                className="flex justify-center p-4 text-xl font-medium text-blue-primary hover:text-red-primary lg:text-base"
+                href="#"
+              >
+                Community
+              </a>
+            </li>
+          </ul>
+          <a
+            className="hidden lg:flex bg-red-primary text-white py-3 px-8 rounded-full shadow-md shadow-red-primary hover:opacity-90"
+            href="/"
+          >
+            Get Started
+          </a>
         </nav>
       </header>
       <main className="px-4">
@@ -110,14 +118,12 @@ function App() {
         </section>
         <section className="mt-24 leading-relaxed">
           <h2 className="text-center text-blue-primary text-4xl leading-normal font-bold">
-            What's different
-            <br />
-            about Manage?
+            What's different about Manage?
           </h2>
           <p className="text-gray-light text-center mt-4">
-            Manage provides all the functionality your <br /> team needs,
-            without the complexity. Our <br /> software is tailor-made for
-            modern digital <br /> product teams.
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
           </p>
           <ul className="mt-10">
             <li>
