@@ -59,8 +59,8 @@ function App() {
           </p>
           <ul className="mt-10">
             <li>
-              <h3 className="bg-red-light p-2 pl-0 rounded-full text-blue-primary font-bold text-lg">
-                <span className="p-2 px-6 bg-red-primary text-white rounded-full mr-2">
+              <h3 className="bg-red-light p-2 pl-0 rounded-full text-blue-primary font-bold ">
+                <span className="p-2 px-4 bg-red-primary text-white rounded-full mr-2">
                   01
                 </span>{' '}
                 Track company-wide progress
@@ -73,8 +73,8 @@ function App() {
               </p>
             </li>
             <li className="mt-8">
-              <h3 className="bg-red-light p-2 pl-0 rounded-full text-blue-primary font-bold text-lg">
-                <span className="p-2 px-6 bg-red-primary text-white rounded-full mr-2">
+              <h3 className="bg-red-light p-2 pl-0 rounded-full text-blue-primary font-bold ">
+                <span className="p-2 px-4 bg-red-primary text-white rounded-full mr-2">
                   02
                 </span>{' '}
                 Advanced built-in reports
@@ -87,8 +87,8 @@ function App() {
             </li>
 
             <li className="mt-8">
-              <h3 className="bg-red-light p-2 pl-0 rounded-full text-blue-primary font-bold text-lg">
-                <span className="p-2 px-6 bg-red-primary text-white rounded-full mr-2">
+              <h3 className="bg-red-light p-2 pl-0 rounded-full text-blue-primary font-bold ">
+                <span className="p-2 px-4 bg-red-primary text-white rounded-full mr-2">
                   03
                 </span>{' '}
                 Everything you need in one place
@@ -141,39 +141,60 @@ function App() {
           <div className="px-4 mt-8 flex justify-evenly  mx-auto  text-gray-300">
             <ul className="">
               <li>
-                <a className="flex p-2 hover:text-white" href="#">
+                <a
+                  className="flex p-2 text-white hover:text-red-primary"
+                  href="#"
+                >
                   Home
                 </a>
               </li>
               <li>
-                <a className="flex p-2 hover:text-white" href="#">
+                <a
+                  className="flex p-2 text-white hover:text-red-primary"
+                  href="#"
+                >
                   Pricing
                 </a>
               </li>
               <li>
-                <a className="flex p-2 hover:text-white" href="#">
+                <a
+                  className="flex p-2 text-white hover:text-red-primary"
+                  href="#"
+                >
                   Products
                 </a>
               </li>
               <li>
-                <a className="flex p-2 hover:text-white" href="#">
+                <a
+                  className="flex p-2 text-white hover:text-red-primary"
+                  href="#"
+                >
                   About Us
                 </a>
               </li>
             </ul>
             <ul className="">
               <li>
-                <a className="flex p-2 hover:text-white" href="#">
+                <a
+                  className="flex p-2 text-white hover:text-red-primary"
+                  href="#"
+                >
                   Careers
                 </a>
               </li>
               <li>
-                <a className="flex p-2 hover:text-white" href="#">
+                <a
+                  className="flex p-2 text-white hover:text-red-primary"
+                  href="#"
+                >
                   Community
                 </a>
               </li>
               <li>
-                <a className="flex p-2 hover:text-white" href="#">
+                <a
+                  className="flex p-2 text-white hover:text-red-primary"
+                  href="#"
+                >
                   Privacy Policy
                 </a>
               </li>
