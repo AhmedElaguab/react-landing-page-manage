@@ -120,19 +120,21 @@ function App() {
             </a>
           </div>
         </section>
-        <section className="mt-24 leading-relaxed">
-          <h2 className="text-center text-blue-primary text-4xl leading-normal font-bold">
-            What's different about Manage?
-          </h2>
-          <p className="text-gray-light text-center mt-4">
-            Manage provides all the functionality your team needs, without the
-            complexity. Our software is tailor-made for modern digital product
-            teams.
-          </p>
-          <ul className="mt-10">
+        <section className="mt-24 leading-relaxed lg:flex">
+          <div className="text-center lg:text-start lg:w-1/2 pr-10">
+            <h2 className=" text-blue-primary text-4xl leading-normal font-bold">
+              What's different about Manage?
+            </h2>
+            <p className="text-gray-light  mt-4">
+              Manage provides all the functionality your team needs, without the
+              complexity. Our software is tailor-made for modern digital product
+              teams.
+            </p>
+          </div>
+          <ul className="mt-10 lg:mt-0 lg:w-1/2">
             <li>
-              <h3 className="bg-red-light p-2 pl-0 rounded-full text-blue-primary font-bold ">
-                <span className="p-2 px-4 bg-red-primary text-white rounded-full mr-2">
+              <h3 className="bg-red-light lg:bg-transparent p-2 pl-0 rounded-full text-blue-primary font-bold lg:text-xl">
+                <span className="p-2 px-4 lg:px-6 bg-red-primary text-white rounded-full mr-2">
                   01
                 </span>{' '}
                 Track company-wide progress
@@ -145,8 +147,8 @@ function App() {
               </p>
             </li>
             <li className="mt-8">
-              <h3 className="bg-red-light p-2 pl-0 rounded-full text-blue-primary font-bold ">
-                <span className="p-2 px-4 bg-red-primary text-white rounded-full mr-2">
+              <h3 className="bg-red-light lg:bg-transparent p-2 pl-0 rounded-full text-blue-primary font-bold lg:text-xl">
+                <span className="p-2 px-4 lg:px-6 bg-red-primary text-white rounded-full mr-2">
                   02
                 </span>{' '}
                 Advanced built-in reports
@@ -159,8 +161,8 @@ function App() {
             </li>
 
             <li className="mt-8">
-              <h3 className="bg-red-light p-2 pl-0 rounded-full text-blue-primary font-bold ">
-                <span className="p-2 px-4 bg-red-primary text-white rounded-full mr-2">
+              <h3 className="bg-red-light lg:bg-transparent p-2 pl-0 rounded-full text-blue-primary font-bold lg:text-xl">
+                <span className="p-2 px-4 lg:px-6 bg-red-primary text-white rounded-full mr-2">
                   03
                 </span>{' '}
                 Everything you need in one place
