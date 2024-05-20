@@ -8,21 +8,83 @@ import IconYoutube from './assets/images/icon-youtube.svg';
 import IconTwitter from './assets/images/icon-twitter.svg';
 import IconPintrest from './assets/images/icon-pinterest.svg';
 import IconInsta from './assets/images/icon-instagram.svg';
+import { useState } from 'react';
 
 function App() {
+  const [showNavbar, setShowNavbar] = useState(false);
+  const closeNavbar = () => setShowNavbar(false);
   return (
-    <div>
+    <div
+      onKeyUp={e => {
+        if (e.code === 'Escape') closeNavbar();
+      }}
+    >
       <header>
         <nav className="flex justify-between items-center px-7 py-12">
           <img className="h-[22px]" src={Logo} alt="manage logo" />
-          <button>
-            <img
-              className="w-[30px] pb-1"
-              src={IconHamburger}
-              alt="hamburger icon"
-            />
-            <img className="hidden" src={IconClose} alt="close icon" />
+          <button
+            className="w-[30px] h-[30px] pb-1 flex justify-end items-center"
+            onClick={() => setShowNavbar(!showNavbar)}
+          >
+            {!showNavbar ? (
+              <img src={IconHamburger} alt="hamburger icon" />
+            ) : (
+              <img src={IconClose} alt="close icon" />
+            )}
           </button>
+          {showNavbar && (
+            <>
+              <span
+                onClick={closeNavbar}
+                className="fixed top-0 bottom-0 right-0 left-0 bg-black opacity-20"
+              ></span>
+              <ul
+                onClick={closeNavbar}
+                className="fixed bg-white top-24 left-6 right-6 shadow-lg rounded-lg py-8"
+              >
+                <li>
+                  <a
+                    className="flex justify-center p-4 text-xl font-medium text-blue-primary hover:text-red-primary "
+                    href="#"
+                  >
+                    Pricing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="flex justify-center p-4 text-xl font-medium text-blue-primary hover:text-red-primary "
+                    href="#"
+                  >
+                    Product
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="flex justify-center p-4 text-xl font-medium text-blue-primary hover:text-red-primary "
+                    href="#"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="flex justify-center p-4 text-xl font-medium text-blue-primary hover:text-red-primary "
+                    href="#"
+                  >
+                    Careers
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="flex justify-center p-4 text-xl font-medium text-blue-primary hover:text-red-primary "
+                    href="#"
+                  >
+                    Community
+                  </a>
+                </li>
+              </ul>
+            </>
+          )}
         </nav>
       </header>
       <main className="px-4">
