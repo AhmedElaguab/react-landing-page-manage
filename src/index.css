@@ -10,3 +10,16 @@ body {
   background-repeat: no-repeat;
   height: 3000px;
 }
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.center-avatar {
+  left: calc(50% - 40px);
+}

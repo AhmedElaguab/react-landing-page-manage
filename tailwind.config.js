@@ -12,6 +12,7 @@ export default {
         'red-primary': 'hsl(12, 88%, 59%)',
         'red-light': 'hsl(13, 100%, 96%)',
         'gray-light': 'hsl(227, 12%, 61%)',
+        'gray-lighter': 'hsl(0, 0%, 98%)',
       },
     },
   },
