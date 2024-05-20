@@ -43,6 +43,7 @@ function App() {
               className={`fixed top-0 bottom-0 right-0 left-0 bg-gradient-to-t from-black opacity-30 ${
                 !showNavbar && 'hidden'
               } lg:hidden`}
+              onClick={closeNavbar}
             ></span>
             <ul
               onClick={closeNavbar}
