@@ -213,8 +213,8 @@ function App() {
         </section>
 
         <footer className="bg-blue-dark -mx-4 py-10 px-4">
-          <div className="max-w-[1264px] mx-auto">
-            <div className="flex">
+          <div className="max-w-[1264px] mx-auto lg:flex">
+            <div className="flex lg:order-3 lg:items-baseline">
               <input
                 className="grow  inline-flex bg-red-white py-3 px-8 rounded-full hover:opacity-90 mr-2"
                 type="text"
@@ -227,7 +227,7 @@ function App() {
                 Go
               </a>
             </div>
-            <div className="px-4 mt-8 flex justify-evenly  mx-auto  text-gray-300">
+            <div className="px-4 mt-8 flex justify-evenly mx-auto text-gray-300 lg:order-2 lg:mt-0 lg:mx-0 lg:grow">
               <ul className="">
                 <li>
                   <a
@@ -289,57 +289,59 @@ function App() {
                 </li>
               </ul>
             </div>
-            <ul className="mt-10 flex justify-between px-10">
-              <li>
-                <a className="flex w-9 hover:opacity-90" href="#">
-                  <img
-                    className="w-full"
-                    src={IconFacebook}
-                    alt="Facebook Icon"
-                  />
+            <div className="lg:order-1 lg:flex lg:flex-col lg:justify-between lg:items-baseline">
+              <ul className="mt-10 flex justify-between px-10 lg:order-2 lg:px-0 lg:w-full lg:mt-0">
+                <li>
+                  <a className="flex w-9 hover:opacity-90" href="#">
+                    <img
+                      className="w-full"
+                      src={IconFacebook}
+                      alt="Facebook Icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a className="flex w-9 hover:opacity-90" href="#">
+                    <img
+                      className="w-full"
+                      src={IconYoutube}
+                      alt="Youtube Icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a className="flex w-9 hover:opacity-90" href="#">
+                    <img
+                      className="w-full"
+                      src={IconTwitter}
+                      alt="Twitter Icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a className="flex w-9 hover:opacity-90" href="#">
+                    <img
+                      className="w-full"
+                      src={IconPintrest}
+                      alt="Pintrest Icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a className="flex w-9 hover:opacity-90" href="#">
+                    <img className="w-full" src={IconInsta} alt="Insta Icon" />
+                  </a>
+                </li>
+              </ul>
+              <div className="mt-20 lg:order-1 lg:mt-0">
+                <a href="#" className="flex w-[50%] mx-auto lg:w-full">
+                  <img className="w-full" src={LogoLight} alt="manager logo" />
                 </a>
-              </li>
-              <li>
-                <a className="flex w-9 hover:opacity-90" href="#">
-                  <img
-                    className="w-full"
-                    src={IconYoutube}
-                    alt="Youtube Icon"
-                  />
-                </a>
-              </li>
-              <li>
-                <a className="flex w-9 hover:opacity-90" href="#">
-                  <img
-                    className="w-full"
-                    src={IconTwitter}
-                    alt="Twitter Icon"
-                  />
-                </a>
-              </li>
-              <li>
-                <a className="flex w-9 hover:opacity-90" href="#">
-                  <img
-                    className="w-full"
-                    src={IconPintrest}
-                    alt="Pintrest Icon"
-                  />
-                </a>
-              </li>
-              <li>
-                <a className="flex w-9 hover:opacity-90" href="#">
-                  <img className="w-full" src={IconInsta} alt="Insta Icon" />
-                </a>
-              </li>
-            </ul>
-            <div className="mt-20">
-              <a href="#" className="flex w-[50%] mx-auto">
-                <img className="w-full" src={LogoLight} alt="manager logo" />
-              </a>
+              </div>
+              <p className="mt-20 text-gray-light text-center lg:order-3 lg:mt-0">
+                Copyright {new Date().getFullYear()}, All rights reserved!
+              </p>
             </div>
-            <p className="mt-20 text-gray-light text-center">
-              Copyright {new Date().getFullYear()}, All rights reserved!
-            </p>
           </div>
         </footer>
       </main>
