@@ -20,6 +20,8 @@ import AvatarAnisha from './assets/images/avatar-anisha.png';
 import AvatarRichard from './assets/images/avatar-richard.png';
 import AvatarShanai from './assets/images/avatar-shanai.png';
 
+import BgPattern from './assets/images/bg-tablet-pattern.svg';
+
 const testimonials: { avatar: string; name: string; text: string }[] = [
   {
     avatar: AvatarAli,
@@ -48,10 +50,16 @@ function App() {
   const closeNavbar = () => setShowNavbar(false);
   return (
     <div
+      className="relative"
       onKeyUp={e => {
         if (e.code === 'Escape') closeNavbar();
       }}
     >
+      <img
+        className="absolute -z-10 -top-28 -right-28"
+        src={BgPattern}
+        alt="background pattern"
+      />
       <header>
         <div className="max-w-[1264px] mx-auto">
           <nav className="flex justify-between items-center px-7 py-12">
@@ -161,8 +169,14 @@ function App() {
             </div>
           </section>
         </div>
-        <div className="max-w-[1264px] mx-auto">
-          <section className="mt-24 leading-relaxed lg:flex">
+
+        <section className="mt-24 leading-relaxed relative">
+          <img
+            className="absolute -z-10 -top-80 -right-40 lg:top-0 lg:-left-64 "
+            src={BgPattern}
+            alt="background pattern"
+          />
+          <div className="max-w-[1264px] mx-auto lg:flex">
             <div className="text-center lg:text-start lg:w-1/2 pr-10">
               <h2 className=" text-blue-primary text-4xl leading-normal font-bold">
                 What's different about Manage?
@@ -216,8 +230,8 @@ function App() {
                 </p>
               </li>
             </ul>
-          </section>
-        </div>
+          </div>
+        </section>
         <section className="mt-24 leading-relaxed text-center">
           <h2 className="text-blue-primary text-4xl leading-normal font-bold">
             What they've said

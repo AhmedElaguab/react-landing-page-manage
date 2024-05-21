@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 body {
-  background-image: url('./assets/images/bg-tablet-pattern.svg'),
+  /* background-image: url('./assets/images/bg-tablet-pattern.svg'),
     url('./assets/images/bg-tablet-pattern.svg');
   background-position: 75px -35px, 75px 400px;
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .swiper-pagination {
